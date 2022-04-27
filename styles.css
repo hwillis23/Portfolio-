@@ -1,0 +1,31 @@
+.center {
+    align-items: center;
+    text-align: center;
+    border: 5px solid rgb(109, 108, 108);
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    border-radius: 8px;
+}
+
+head {
+    background-color: rgb(0, 111, 128);
+    opacity: 0.6;
+}
+
+h1,
+h2,
+p {
+    text-align: center;
+    color: black;
+}
+
+#para1 {
+    text-align: center;
+    color: rgb(88, 94, 161);
+}
