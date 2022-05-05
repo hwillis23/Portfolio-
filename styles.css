@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
  *{
     padding: 0;
-    margin:0;
+    margin: 0;
     box-sizing: border-box; 
 }
 
@@ -14,7 +14,7 @@ a{
     text-decoration: none;
 }
 .container {
-    min-height: 130vh;
+    min-height: 100vh;  /*height of box */ 
     width: 100%;
     display: flex;
     align-items: center;
@@ -25,13 +25,42 @@ img {
     width: 100%;
     object-fit: cover;
 }
-p{
+
+.navbar {
+    overflow: hidden;
+    background-color: transparent;
+    opacity: 1;
+    margin:12px 40px;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: rgb(242, 214, 242);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
+
+p { 
     color: white;
     text-align: left;
     font-size: 1.4rem;
     line-height: 1.9rem;
 }
-  .about_me-title {
+
+.about_me-title {
     font-size: 3.2rem;
     font-weight:300;
     color: black;
@@ -39,15 +68,8 @@ p{
     text-transform: uppercase;
     letter-spacing: .2rem;
     text-align: center;
-  }
+}
 
-   /* .nav-wrap {
-    content: '';
-    display: inline-block;
-    vertical-align: middle;
-    height: 50%;
-   
-} */
 
 /*Hero Section */
 #hero{
@@ -73,7 +95,7 @@ p{
          max-width: 1200px;
          margin: 0 auto;
          padding: 0 50px;
-         justify-content: flex-end;  /*to move Hello message to the right */
+         justify-content: flex-end;  /*use to move Hello message to the right */
      }
     #hero h1{
         display: block;
@@ -130,8 +152,8 @@ p{
        
     }
     #hero .cta:hover{
+        background: red;
         color: white;
-        background-color: red;
     }
 
 /*End Hero Section */
@@ -150,7 +172,7 @@ p {
 
 #para1 {
     text-align: center;
-    color: rgb(48, 52, 99);
+    color: rgb(38, 46, 136);
 }
 
 /*About Me Section */
@@ -158,9 +180,12 @@ p {
     background-color: black;
     display: flex;
     justify-content: center;
+    height: 80vh;
 
 }
-#about_me .container{
+#about_me .about_me{
+    display:flex;
+    align-items: center;
     flex-direction: column;
     text-align: center;
     max-width:500px;
@@ -168,7 +193,9 @@ p {
     padding: 2rem 2rem;
     border-bottom: 4;
     column-gap: 40px;
-    /*background-color: black; */
+    height: 100%;
+    justify-content: center;
+    
 }
 #about_me .about_me-title{
     font-size: 3.2rem;
@@ -180,7 +207,7 @@ p {
     text-align: center;
     background-color: black;
 }
-#about_me .about_me-info-button{
+ #about_me .about_me-info-button{
         display: inline-block;
         padding: 10px 30px;
         color: white; 
@@ -196,36 +223,73 @@ p {
       #about_me .about_me-info-button:hover{
         color: white;
         background-color: purple;
+    } 
+    /* .resumeContainer {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-    #about_me .about_me-img .about_me-img-wrapper{
 
-        margin-top: 50px;
-        margin-bottom: 50px;
-        margin-right: 50px;
-        margin-left: 50px;
-        padding-bottom: 2rem 2rem;
-        height: auto;
-        max-width: 400px;
-        position: relative;
+    .resumeContainer a{
         display: inline-block;
+        border: 2px solid red;
+        text-decoration: none;
+        padding: 10px 30px;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+        color: green;
+        position: relative;
+        z-index: 1;
+        /* border-radius: 15px; */
+        /* overflow: hidden;
+        background-color: orange;
     }
-    #about_me .about_me-img .about_me-img-wrapper img{
-        height:93%;
-        width: 95%;
-        display: flexbox;
-    }
-    /* #about_me .about_me-img .about_me-img-wrapper::after {
+    .resumeContainer a::before,
+    .resumeContainer a::after,
+    .resumeContainer a span::before,
+    .resumeContainer a span::after{
+        content:'';
         position: absolute;
-        content: '';
-        right:-5rem;
-        top:50%;
-        transform: translateY(-50%);
-        width: 70%;
-        height: 100%;
-        background-color: gainsboro;
+        height: 50%;
+        width: calc(100% / 4);
+        background:yellowgreen;
+        z-index: 1;
+        transition: height .5s ease-in-out;
         z-index: -1;
-    } */
+    }
+    .resumeContainer a::before {
+        left: 0;
+        top:0;
+    }
+    .resumeContainer a span::before {
+        top: 0;
+        left: 25%;
+    }
+    .resumeContainer a span::after{
+        top:0;
+        left:50%;
+    }
+    .resumeContainer a::after{
+        top:0;
+        left: 75%;
+    }
 
+ .resumeContainer a:hover::before,
+ .resumeContainer a:hover::after,
+ .resumeContainer a:hover span::after,
+ .resumeContainer a:hover span::before{
+     height: 100%;
+ }  */
+
+    .img-wrapper {
+        max-height: 100%;
+        width: auto;
+        padding: 3.5rem;
+    }
+   
 #about_me .about_me-top p{
 font-size: 2.2rem;
 margin-top: 5px;
@@ -293,81 +357,12 @@ background-color: black;
 
 /*End About Me Section */
 
+
+
 /* Projects Section */
-#projects .projects {
-    flex-direction: column;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 100px 0;
-}
-#projects .project-header h1{
-    margin-bottom: 50px;
-}
-#projects .all-projects {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-#projects .project-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 80%;
-    margin: 20px auto;
-    overflow: hidden;
-    border-radius: 10px;
-}
-#projects .project-info {
-    padding: 30px;
-    flex-basis: 50%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column-reverse;
-    background-image: linear-gradient();
-    color: green;
-}
-#projects .project-info h1{
-    font-size: 4rem;
-    font-weight: 500;
-}
-#projects .project-info h2{
-    font-size: 3rem;
-    font-weight: 500;
-    margin-top: 10px;
-}
-#projects .project-info p{
-    color: red;
-}
-#projects .project-img{
-    flex-basis: 50%;
-height: 200px;
-overflow: hidden;
-position:relative;
-
-}
-#projects .project-img:after{
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 50%;
-    width: 50%;
-    background-image: linear-gradient(60deg);
-    opacity: .2;
-}
-#projects .project-img img {
-    transition: .4s ease transform;  
-}
-#projects .project-img:hover .project-img img {
-    transform: scale(1.1);
-}
-
 
 /* End Projects Section */
+
 
 
 /*Keyframes */
@@ -393,3 +388,207 @@ position:relative;
     }
 }
 /*End Keyframes */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+* {
+    font-family:'Oswald', sans-serif;
+}
+
+section .footer {
+  width: 100%;
+  display: inline-block;
+  background: #333;
+  height: 5em;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.footer-distributed{
+	background: #080707;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 25px 20px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Oswald', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  #365dba;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #524949;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color: #1440a7;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+       /*end of copy code for footer*/
+
+
+       /*start of copy of projects */
+
+     
