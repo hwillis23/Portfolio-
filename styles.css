@@ -552,7 +552,7 @@ section .footer {
 	width: 35px;
 	height: 35px;
 	cursor: pointer;
-	background-color:  #33383b;
+	background-color:  #06090b;
 	border-radius: 2px;
 
 	font-size: 20px;
@@ -560,8 +560,8 @@ section .footer {
 	text-align: center;
 	line-height: 35px;
 
-	margin-right: 3px;
-	margin-bottom: 5px;
+	margin-right: 8px;
+	margin-bottom: 8px;
 }
 
 /* If you don't want the footer to be responsive, remove these media queries */
