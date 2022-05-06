@@ -96,6 +96,8 @@ p {
          margin: 0 auto;
          padding: 0 50px;
          justify-content: flex-end;  /*use to move Hello message to the right */
+        
+       
      }
     #hero h1{
         display: block;
@@ -105,6 +107,7 @@ p {
         color: transparent;
         animation: text_reveal .7s ease forwards;
         animation-delay: 1ss;
+    
 
     }
     #hero h1:nth-child(1){
@@ -165,9 +168,14 @@ p {
 
 h1,
 h2,
+h3,
 p {
     text-align: center;
-    color:blueviolet(255, 255, 255, 0.599); 
+    color:white;
+    padding: 12px;
+    background-color: black;
+    
+
 }
 
 #para1 {
@@ -354,6 +362,7 @@ background-color: black;
     font-size: 1.3rem;
     line-height: 1.9rem;
 }
+
 
 /*End About Me Section */
 
@@ -545,6 +554,7 @@ section .footer {
 
 .footer-distributed .footer-icons{
 	margin-top: 25px;
+  
 }
 
 .footer-distributed .footer-icons a{
@@ -554,6 +564,7 @@ section .footer {
 	cursor: pointer;
 	background-color:  #06090b;
 	border-radius: 2px;
+    
 
 	font-size: 20px;
 	color: #ffffff;
@@ -590,5 +601,61 @@ section .footer {
 
 
        /*start of copy of projects */
+      
+       div.projects {
+        border: 1px solid rgb(228, 214, 214);
+        margin: 10px;
+        padding:12px;
+        background-color: #181eca;
+      }
+      
+      div.projects:hover {
+        border: 1px solid #777;
+      }
+      
+      div.projects img {
+        width: 100%;
+        height: auto;
+      }
+      
+      div.image-description  {
+        padding: 15px;
+        text-align: center;
+        color:#ddd
+      }
+      
+      * {
+        box-sizing: border-box;
+      }
+      
+      .responsive {
+        padding: 0 6px;
+        float: left;
+        width: 25%;
+      }
+      
+      @media only screen and (max-width: 700px) {
+        .responsive {
+          width: 49.99999%;
+          margin: 6px 0;
+        }
+      }
+      
+      @media only screen and (max-width: 500px) {
+        .responsive {
+          width: 100%;
+        }
+      }
 
-     
+      .clearfix {
+          background: black;
+        
+      }
+      
+      .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+       
+      }
+      
