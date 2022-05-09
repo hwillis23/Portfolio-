@@ -23,7 +23,12 @@ a{
 img {
     height: 100%;
     width: 100%;
+    /* outline: 3px solid white;
+    outline-offset: 8px;   */
     object-fit: cover;
+    box-shadow: 0 70px 50px -65px #c6bfbf;
+    border-radius: 30px  /*round edges of profile pic */
+       
 }
 
 .navbar {
@@ -96,6 +101,7 @@ p {
          margin: 0 auto;
          padding: 0 50px;
          justify-content: flex-end;  /*use to move Hello message to the right */
+         
         
        
      }
@@ -107,6 +113,8 @@ p {
         color: transparent;
         animation: text_reveal .7s ease forwards;
         animation-delay: 1ss;
+        background-color: transparent;
+       
     
 
     }
@@ -119,6 +127,7 @@ p {
     #hero h1:nth-child(3){
         animation: text_reveal_name .5s ease forwards;
         animation-delay: 4s;
+         
     }
     #hero h1 span{
         position: absolute;
@@ -138,6 +147,7 @@ p {
     }
     #hero h1:nth-child(3) span{
         animation-delay: 3.5s;
+        
     }
 
     #hero .cta {
@@ -150,6 +160,7 @@ p {
         text-transform: uppercase;
         letter-spacing: .1rem;
         margin-top: 30px;  
+        margin-left: 50px;
         transition: .5s ease background-color;
         transition-property: background-color, color;
        
@@ -157,14 +168,23 @@ p {
     #hero .cta:hover{
         background: red;
         color: white;
+        -webkit-box-reflect:below 1px linear-gradient(transparent, rgba(247, 236, 236, 0.333)); 
     }
 
 /*End Hero Section */
+
 
 .responsive {
     max-width: 100%;
     height: auto;
 }
+/* @media only screen and (max-width: 705px) {
+    .h1,.h2.h3,.p,.img-wrapper {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+} */
+
 
 h1,
 h2,
@@ -172,49 +192,79 @@ h3,
 p {
     text-align: center;
     color:white;
-    padding: 12px;
+    padding: 8px;
     background-color: black;
-    
+    margin: auto;
+    /* max-width: fit-content; */
 
 }
+    
 
 #para1 {
     text-align: center;
-    color: rgb(38, 46, 136);
+    color: whitesmoke;  
 }
 
-/*About Me Section */
+  
+
+.img-wrapper {
+    max-height: 100%;
+    width: auto;
+    padding: 3.8rem;
+    margin: .0555rem;
+   
+}
+
+/* element.style {
+    font-size: 3.2rem;
+    letter-spacing: 0.2rem;
+    font-weight: 300;
+    text-shadow: 2px 2px #ff0000;
+} */
+/*About Me Section */  
+
 #about_me {
     background-color: black;
     display: flex;
     justify-content: center;
     height: 80vh;
+    padding-top: 40px;
+    /* padding-bottom: 50px; */
 
 }
+
+  
 #about_me .about_me{
     display:flex;
     align-items: center;
     flex-direction: column;
     text-align: center;
     max-width:500px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     padding: 2rem 2rem;
     border-bottom: 4;
     column-gap: 40px;
     height: 100%;
-    justify-content: center;
-    
+    justify-content:space-evenly;
+    margin-right: 8em;  
 }
+
+  
 #about_me .about_me-title{
     font-size: 3.2rem;
     font-weight:300;
-    color: white;
-    margin-bottom: 10px;
+    color: #bb0e0e;
+    margin-top: 1rem;
+    margin: 0.2rem;
     text-transform: uppercase;
     letter-spacing: .2rem;
     text-align: center;
     background-color: black;
+    padding: .5rem;
+    padding-top: .7rem; 
+    border-top: dotted;          /*added for style */
 }
+
  #about_me .about_me-info-button{
         display: inline-block;
         padding: 10px 30px;
@@ -224,7 +274,7 @@ p {
         font-size: 1rem;
         text-transform: uppercase;
         letter-spacing: .1rem;
-        margin-top: 30px;  
+        margin: 2.0rem;  
         transition: .5s ease background-color;
         transition-property: background-color, color; 
     }
@@ -232,71 +282,13 @@ p {
         color: white;
         background-color: purple;
     } 
-    /* .resumeContainer {
-        height: 100vh;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .resumeContainer a{
-        display: inline-block;
-        border: 2px solid red;
-        text-decoration: none;
-        padding: 10px 30px;
-        font-size: 1rem;
-        text-transform: uppercase;
-        letter-spacing: .1rem;
-        color: green;
-        position: relative;
-        z-index: 1;
-        /* border-radius: 15px; */
-        /* overflow: hidden;
-        background-color: orange;
-    }
-    .resumeContainer a::before,
-    .resumeContainer a::after,
-    .resumeContainer a span::before,
-    .resumeContainer a span::after{
-        content:'';
-        position: absolute;
-        height: 50%;
-        width: calc(100% / 4);
-        background:yellowgreen;
-        z-index: 1;
-        transition: height .5s ease-in-out;
-        z-index: -1;
-    }
-    .resumeContainer a::before {
-        left: 0;
-        top:0;
-    }
-    .resumeContainer a span::before {
-        top: 0;
-        left: 25%;
-    }
-    .resumeContainer a span::after{
-        top:0;
-        left:50%;
-    }
-    .resumeContainer a::after{
-        top:0;
-        left: 75%;
-    }
-
- .resumeContainer a:hover::before,
- .resumeContainer a:hover::after,
- .resumeContainer a:hover span::after,
- .resumeContainer a:hover span::before{
-     height: 100%;
- }  */
-
-    .img-wrapper {
+  
+    /* .img-wrapper {
         max-height: 100%;
         width: auto;
-        padding: 3.5rem;
-    }
+        padding: 3.8rem;
+        margin: .0555rem;
+    } */
    
 #about_me .about_me-top p{
 font-size: 2.2rem;
@@ -364,6 +356,8 @@ background-color: black;
 }
 
 
+
+
 /*End About Me Section */
 
 
@@ -421,7 +415,7 @@ section .footer {
 	width: 100%;
 	text-align: left;
 	font: bold 16px sans-serif;
-	padding: 25px 20px;
+	padding: 70px 15px;   /*added top margin to footer */
 }
 
 .footer-distributed .footer-left,
@@ -502,6 +496,7 @@ section .footer {
   font-weight:400;
 	vertical-align: middle;
 	margin:0;
+    margin-left: 2em; 
 }
 
 .footer-distributed .footer-center p span{
@@ -565,14 +560,14 @@ section .footer {
 	background-color:  #06090b;
 	border-radius: 2px;
     
-
-	font-size: 20px;
+	font-size: 25px;
 	color: #ffffff;
-	text-align: center;
+	text-align-last: right;
 	line-height: 35px;
 
 	margin-right: 8px;
 	margin-bottom: 8px;
+    margin-left: 28px;
 }
 
 /* If you don't want the footer to be responsive, remove these media queries */
@@ -603,10 +598,14 @@ section .footer {
        /*start of copy of projects */
       
        div.projects {
-        border: 1px solid rgb(228, 214, 214);
+        /* border: 1px solid rgb(228, 214, 214); */
         margin: 10px;
         padding:12px;
         background-color: #181eca;
+        border-radius: 10px;
+          /* outline: 3px solid white;
+    outline-offset: 8px;    */
+        
       }
       
       div.projects:hover {
@@ -617,11 +616,26 @@ section .footer {
         width: 100%;
         height: auto;
       }
+
+      img {
+        height: 100%;
+        width: 100%;
+        /* outline: 3px solid white;
+        outline-offset: 8px;   */
+        object-fit: cover;
+        box-shadow: 0 70px 50px -65px #c6bfbf;
+        border-radius: 30px  /*round edges of profile pic */
+           
+    }
       
       div.image-description  {
         padding: 15px;
         text-align: center;
-        color:#ddd
+        color:#ddd;
+        font: small-caption;
+        letter-spacing: .2px;
+        white-space: break-spaces;
+        
       }
       
       * {
@@ -629,8 +643,9 @@ section .footer {
       }
       
       .responsive {
-        padding: 0 6px;
-        float: left;
+        padding: .5rem;
+        margin:auto;
+        float: right;
         width: 25%;
       }
       
@@ -649,6 +664,7 @@ section .footer {
 
       .clearfix {
           background: black;
+          padding-bottom: 4em;
         
       }
       
@@ -658,4 +674,35 @@ section .footer {
         clear: both;
        
       }
+
+      .projects-wrapper {
+        /* height: 100vh; */
+        /*This part is important for centering*/
+        display: grid;
+        place-items: center;
+        color:green;
+        background-color: #080707;
+        padding-bottom: 40px;
+      }
       
+      .typing-demo {
+        width: 9.5ch;
+        animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid;
+        font-family: oswald;
+        font-size: 3em;
+      }
+      
+      @keyframes typing {
+        from {
+          width: 0
+        }
+      }
+          
+      @keyframes blink {
+        50% {
+          border-color: transparent
+        }
+      }

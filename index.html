@@ -3,7 +3,7 @@
 
 <head>
  
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css" media="screen">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -49,12 +49,13 @@
                 I have always been interested in technology and I love solving problems; software development compliments the two so I can have a career that I am passionate about.
                  Outside of coding, I enjoy spending time working out, cooking, gardening, and going to concerts!
                 I'm a motivated software engineering graduate of TrueCoders with over 500 hours of experience in software development.
-                 I am seeking to use proven skills in C#, CSS, SQL, JavaScript, and project management to meet your business needs. 
+                 I am seeking to use proven skills in C#, CSS, SQL, JavaScript, and project management to meet your business needs.
+                 Can't wait to work with you! 
             </p>
-            <p>
-                <span>Can't wait to work with you!</span>
+            <!-- <p> -->
+                <!-- <span>Can't wait to work with you!</span> 
             </p>
-            <!-- <div class="resumeContainer">
+             <div class="resumeContainer">
                 <a href="#"><span>Resume</span></a>
             </div> -->
             <a href="#"type="button" class="about_me-info-button">Download Resume</a> 
@@ -64,8 +65,10 @@
              </a>
         </div>
         <div class="img-wrapper">
-                <img src="./images/bW_PIC1.png">  <!--selfie-->
-                
+            <picture>
+                <img src="./images/bW_PIC1.png" >  <!--selfie-->
+            </picture>
+
             </div>
         </section>
 
@@ -84,9 +87,19 @@
           </div> -->
 
           <section id="projects"></section>
-          <div class="projects class"></div>
+          <!-- <div class="projects class"></div> -->
                
-            <h3>PROJECTS</h3>
+             <!-- <h3><span>  <span style="font-size:3.2rem;letter-spacing: 0.2rem;font-weight:300; text-shadow: 2px 2px #ff0000;">
+                <br>PROJECTS<br></span></span>
+                <span class="line-title-bottom"></span>
+                
+                <br><br></h3> -->
+
+                <div class="projects-wrapper">
+                    <div class="typing-demo">
+                      My Projects
+                    </div>
+                </div>
            
             <!-- <h4> here is a collection of projects I have completed. </h4> -->
             
@@ -95,8 +108,10 @@
                 <a target="_blank" href="https://github.com/hwillis23/TacoParser">
                   <img src="https://media.giphy.com/media/3otPoGoDvNReGKyclG/giphy.gif" alt="Taco Bell logo" width="800" height="600">
                 </a>
-                <div class="image-description">Taco bell Parcer. An exercise in unit testing the parse method, implement the parse method, geolocation, csv parsing, and logging.
-                    Using the GeoCoordinate.NetCore Nuget Package to calculate the distance between two Taco Bell locations and return an ITrackable.
+                <div class="image-description">TACO BELL PARCER.
+
+ An exercise in unit testing the parse method, implement the parse method, geolocation, csv parsing, and logging.
+Using the GeoCoordinate.NetCore Nuget Package to calculate the distance between two Taco Bell locations and return an ITrackable.
                     </div>
               </div>
             </div>
@@ -107,7 +122,9 @@
                 <a target="_blank" href="https://github.com/hwillis23/KanyeRestEx1">
                   <img src="https://media.giphy.com/media/9Xh1CGm4Hzo4g/giphy.gif" alt="Kanye West" width="800" height="800">
                 </a>
-                <div class="image-description">In this project , I utilized C# .Net Core Application where I use two different APIs to obtain quotes from Kanye West as JSON Objects, and quotes from Ron Swanson as JSON Arrays. The quotes created are used to simulate a conversation between the two.</div>
+                <div class="image-description">KANYE-SWANSON QUOTE GENERATOR
+                
+  In this project , I utilized C# .Net Core Application where I use two different APIs to obtain quotes from Kanye West as JSON Objects, and quotes from Ron Swanson as JSON Arrays. The quotes created are used to simulate a conversation between the two.</div>
               </div>
             </div>
             
@@ -116,7 +133,9 @@
                 <a target="_blank" href="https://github.com/hwillis23/OpenWeatherAPI">
                   <img src="https://media.giphy.com/media/26uf6uegZTfKhhAyI/giphy.gif" alt="Weather app" width="800" height="800">
                 </a>
-                <div class="image-description"> With this project, I utilized ASP.NET MVC Framework that takes the data from a weather API and outputs the current weather for any location worldwide.</div>
+                <div class="image-description"> OPEN WEATHER API
+
+ With this project, I utilized ASP.NET MVC Framework that takes the data from a weather API and outputs the current weather for any location worldwide.</div>
               </div>
             </div>
             
@@ -125,11 +144,13 @@
                 <a target="_blank" href="https://github.com/hwillis23/besetbuyorm1">
                   <img src="https://media.giphy.com/media/26uffvEusmCVR66Tm/giphy.gif" alt="Best Buy Logo" width="800" height="800">
                 </a>
-                <div class="image-description">The BestBuy database simulates an inventory management system along with employee sales records. Here i have implemented a repository pattern to isolate the data access logic and business logic in order to allow for a more loosely coupled approached to data access from a sample BestBuy databases I also demonstrated CRUD operations through a console user interface via ASP.NET and used dabatbases in VS C# with dapper(ORM) via MySQL tables Department</div>
+                <div class="image-description">MOCK BEST BUY DATA BASE 
+                    
+The BestBuy database simulates an inventory management system along with employee sales records. Here i have implemented a repository pattern to isolate the data access logic and business logic in order to allow for a more loosely coupled approached to data access from a sample BestBuy databases I also demonstrated CRUD operations through a console user interface via ASP.NET and used dabatbases in VS C# with dapper(ORM) via MySQL tables Department</div>
               </div>
             </div>
             
-            <div class="clearfix"></div>     <!-- It's generally used in float layouts where elements are floated to be stacked horizontally. -->
+            <div class="clearfix"></div>     <!-- This class is generally used in float layouts where elements are floated to be stacked horizontally. -->
             
             <!-- <div style="padding:16px;">
            
@@ -180,7 +201,10 @@
 
 				<p class="footer-company-about">
 					<span>Thank you for visiting my Portfolio.</span>
-					Keep on rolling!! 
+                    <ion-icon name="sparkles-outline"></ion-icon>
+                    <ion-icon name="sparkles-outline"></ion-icon>
+                    <ion-icon name="sparkles-outline"></ion-icon>
+					<!-- Keep on rolling!!  -->
 				</p>
 
 				<div class="footer-icons">
