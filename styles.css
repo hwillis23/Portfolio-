@@ -14,29 +14,28 @@ a{
     text-decoration: none;
 }
 .container {
-    min-height: 100vh;  /*height of box */ 
+    min-height: 90vh;  /*height of box */ 
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center; 
 }
-img {
+/* img {
     height: 100%;
-    width: 100%;
+    width: 100%; */
     /* outline: 3px solid white;
     outline-offset: 8px;   */
-    object-fit: cover;
+    /* object-fit: cover;
     box-shadow: 0 70px 50px -65px #c6bfbf;
-    border-radius: 30px  /*round edges of profile pic */
+    border-radius: 30px  }(round edges of profile pic) */
        
-}
+
 
 .navbar {
     overflow: hidden;
     background-color: transparent;
     opacity: 1;
     margin:12px 40px;
-
     position: fixed;
     top: 0;
     width: 100%;
@@ -46,7 +45,7 @@ img {
   .navbar a {
     float: left;
     display: block;
-    color: rgb(242, 214, 242);
+    color: whitesmoke;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -59,13 +58,13 @@ img {
   }
 
 p { 
-    color: white;
+    /* color:white; */
     text-align: left;
-    font-size: 1.4rem;
+    font-size: 17px;
     line-height: 1.9rem;
 }
 
-.about_me-title {
+/* .about_me-title {
     font-size: 3.2rem;
     font-weight:300;
     color: black;
@@ -73,7 +72,7 @@ p {
     text-transform: uppercase;
     letter-spacing: .2rem;
     text-align: center;
-}
+} */
 
 
 /*Hero Section */
@@ -108,7 +107,8 @@ p {
     #hero h1{
         display: block;
         width: fit-content;
-        font-size: 4rem;
+        font-size: 5em;
+        font-weight: 550;
         position:relative;
         color: transparent;
         animation: text_reveal .7s ease forwards;
@@ -135,7 +135,7 @@ p {
         left: 0;
         height: 100%;
         width: 0%;
-        background-color: red;
+        background-color: transparent;
         animation: text_reveal_box 1s ease;
         animation-delay: .5s;
     }
@@ -155,8 +155,8 @@ p {
         padding: 10px 30px;
         color: white; 
         background-color: transparent;
-        border: 2px solid red; 
-        font-size: 2rem;
+        border: 3px solid rgb(27, 113, 102); 
+        font-size: 30px;
         text-transform: uppercase;
         letter-spacing: .1rem;
         margin-top: 30px;  
@@ -166,7 +166,7 @@ p {
        
     }
     #hero .cta:hover{
-        background: red;
+        background: purple;
         color: white;
         -webkit-box-reflect:below 1px linear-gradient(transparent, rgba(247, 236, 236, 0.333)); 
     }
@@ -190,10 +190,10 @@ h1,
 h2,
 h3,
 p {
-    text-align: center;
+    text-align: -webkit-center;
     color:white;
-    padding: 8px;
-    background-color: black;
+    padding: 6px;
+    /* background-color: black; */
     margin: auto;
     /* max-width: fit-content; */
 
@@ -207,50 +207,43 @@ p {
 
   
 
-.img-wrapper {
+/* .img-wrapper {
     max-height: 100%;
     width: auto;
     padding: 3.8rem;
     margin: .0555rem;
-   
-}
-
-/* element.style {
-    font-size: 3.2rem;
-    letter-spacing: 0.2rem;
-    font-weight: 300;
-    text-shadow: 2px 2px #ff0000;
 } */
+
+
 /*About Me Section */  
 
-#about_me {
+/* #about_me {
     background-color: black;
     display: flex;
     justify-content: center;
     height: 80vh;
     padding-top: 40px;
-    /* padding-bottom: 50px; */
-
-}
+  
+} */
 
   
-#about_me .about_me{
+/* #about_me .about_me{
     display:flex;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    max-width:500px;
+    max-width:500px; */
     /* margin: 0 auto; */
-    padding: 2rem 2rem;
+    /* padding: 2rem 2rem;
     border-bottom: 4;
     column-gap: 40px;
     height: 100%;
     justify-content:space-evenly;
     margin-right: 8em;  
-}
+} */
 
   
-#about_me .about_me-title{
+/* #about_me .about_me-title{
     font-size: 3.2rem;
     font-weight:300;
     color: #bb0e0e;
@@ -262,10 +255,10 @@ p {
     background-color: black;
     padding: .5rem;
     padding-top: .7rem; 
-    border-top: dotted;          /*added for style */
-}
+    border-top: dotted;           /*added for style */
+/* } */ 
 
- #about_me .about_me-info-button{
+ /* #about_me .about_me-info-button{
         display: inline-block;
         padding: 10px 30px;
         color: white; 
@@ -281,7 +274,7 @@ p {
       #about_me .about_me-info-button:hover{
         color: white;
         background-color: purple;
-    } 
+    }  */
   
     /* .img-wrapper {
         max-height: 100%;
@@ -290,7 +283,7 @@ p {
         margin: .0555rem;
     } */
    
-#about_me .about_me-top p{
+/* #about_me .about_me-top p{
 font-size: 2.2rem;
 margin-top: 5px;
 line-height: 2.5rem;
@@ -318,10 +311,10 @@ background-color: black;
     margin: 10px 25%; 
     position: relative;
     z-index: 1;
-    overflow: hidden;
-    
-}
-#about_me .about_me-item::after{
+    overflow: hidden;   
+} */
+
+/* #about_me .about_me-item::after{
     content: '';
     position:absolute;
     left:0%;
@@ -353,12 +346,12 @@ background-color: black;
     text-align: left;
     font-size: 1.3rem;
     line-height: 1.9rem;
-}
-
-
-
+} */
 
 /*End About Me Section */
+
+
+
 
 
 
@@ -386,7 +379,7 @@ background-color: black;
 }
 @keyframes text_reveal_name {
     100%{
-        color: red;
+        color: #9922af;
         font-weight: 500px;
     }
 }
@@ -549,7 +542,7 @@ section .footer {
 
 .footer-distributed .footer-icons{
 	margin-top: 25px;
-  
+  text-align: center;
 }
 
 .footer-distributed .footer-icons a{
@@ -565,9 +558,9 @@ section .footer {
 	text-align-last: right;
 	line-height: 35px;
 
-	margin-right: 8px;
+	/* margin-right: 8px; */
 	margin-bottom: 8px;
-    margin-left: 28px;
+    /* margin-left: 28px; */
 }
 
 /* If you don't want the footer to be responsive, remove these media queries */
@@ -601,7 +594,7 @@ section .footer {
         /* border: 1px solid rgb(228, 214, 214); */
         margin: 10px;
         padding:12px;
-        background-color: #181eca;
+        background-color: hsl(225deg 72% 39%);
         border-radius: 10px;
           /* outline: 3px solid white;
     outline-offset: 8px;    */
@@ -617,23 +610,32 @@ section .footer {
         height: auto;
       }
 
-      img {
+      /* img {
         height: 100%;
-        width: 100%;
+        width: 100%; */
         /* outline: 3px solid white;
         outline-offset: 8px;   */
-        object-fit: cover;
+        /* object-fit: cover;
         box-shadow: 0 70px 50px -65px #c6bfbf;
-        border-radius: 30px  /*round edges of profile pic */
+        border-radius: 30px  (round edges of profile pic) */
            
-    }
+    /* } */
+
+    img {
+      min-height: 20%;
+      max-height: 400px;  /*used to pic from disapearing when shrinking screen */
+      max-width: 100%;
+      min-width: 150px;
+      object-fit: cover;
+      flex-shrink: 0;  /*try to use to prevent pic from vanishing when shrinking screen...not working */ 
+   }
       
       div.image-description  {
         padding: 15px;
         text-align: center;
         color:#ddd;
         font: small-caption;
-        letter-spacing: .2px;
+        letter-spacing: .02em;
         white-space: break-spaces;
         
       }
@@ -680,8 +682,8 @@ section .footer {
         /*This part is important for centering*/
         display: grid;
         place-items: center;
-        color:green;
-        background-color: #080707;
+        color:rgb(27, 113, 102);
+        background-color: #06090b;
         padding-bottom: 40px;
       }
       
@@ -692,7 +694,7 @@ section .footer {
         overflow: hidden;
         border-right: 3px solid;
         font-family: oswald;
-        font-size: 3em;
+        font-size: 4.5em;
       }
       
       @keyframes typing {
@@ -706,3 +708,129 @@ section .footer {
           border-color: transparent
         }
       }
+
+      
+      /*start of copy of about me  */ 
+      #about-me {
+        background-color: #06090b;
+     }
+
+     #about-me .about-me {
+        flex-direction: row;
+        text-align: center;
+        max-width: 1200px;
+        margin: auto;
+        padding-left: 100px 20px;
+        background-color: #33383b;
+     }
+     #about-me .col-left{   /*image*/
+        width: 600px;
+        height: 400px;
+        padding-left: 60px;
+     }
+     #about-me .col-right{
+        width: 100%;
+     }
+     #about-me .col-right h3 {
+        font-size: 5em;
+        font-weight: 500;
+        letter-spacing: .2rem;   
+        margin-bottom: 10px;
+        color: #9922af;
+     }
+     #about-me .col-right h4 {
+        font-size: 35px;
+        font-weight: 500;
+        letter-spacing: .2rem;   
+        margin-bottom: 10px;
+        color: rgb(27, 113, 102);
+        padding-left: 38px;
+     }
+     #about-me .col-right p{
+        margin-bottom: 20px;
+        display: -webkit-inline-box;
+        color: white;
+        line-height: normal;
+        font-size: 1.3rem;
+        word-spacing: 1.5px;
+     }
+     /* #about-me .col-right .cta {
+        color:orange;
+        margin-bottom: 50px;
+        padding: 10px 20px;
+        font-size: 2rem;
+     } */
+
+     
+     #about-me .col-left .about-me-img {
+        max-height: max-content;  /*100% */
+        max-width: max-content;   /* 100% */
+        position: relative;
+        border: 10px double rgb(229, 233, 222);
+        left: -50px;
+        top: 35px; 
+        z-index: 1;
+        flex-shrink: 0;   /*not sure if needed */
+     }
+     #about-me .col-left .about-me-img::after {
+        content:'';
+        position: absolute;
+        left: -45px;
+        top:34px;
+        height: 100%;
+        width: 98%;
+        /* border: 7px solid red;
+        z-index: -1; */
+     }
+     #about-me .col-left .about-me-img::after{
+        border: 7px double #4022af;
+        z-index: -1; 
+
+     }
+    
+
+     #about-me .col-right {
+        text-align: left;
+        padding: 55px;
+     }
+     #about-me .col-right h3 {
+        text-align: left;
+     }
+
+     #about-me .about-me-container {
+        min-height: 90vh;
+        width: 100%;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        padding-bottom: 120px;
+        padding-left: 120px;
+        padding-right: 100px;
+        padding-top: 60px;
+     }
+
+  
+     #about-me .about-me-resume-button {
+   display: inline-block;
+   padding: 10px 40px;
+   color: white;
+   background-color: transparent;
+   border: 2px solid rgb(27, 113, 102);
+   font-size: 1rem;
+   text-transform: uppercase;
+   letter-spacing: .1rem;
+   margin: 2.0rem;
+   transition: .5s ease background-color;
+   transition-property: background-color, color;
+     }
+
+  #about-me .about-me-resume-button:hover{
+    color: white;
+    background-color: purple;   
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-left, .col-right {
+    width: 100%;
+  }
+}
