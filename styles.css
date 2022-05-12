@@ -107,7 +107,7 @@ p {
     #hero h1{
         display: block;
         width: fit-content;
-        font-size: 5em;
+        font-size: 5.9vw;
         font-weight: 550;
         position:relative;
         color: transparent;
@@ -156,7 +156,7 @@ p {
         color: white; 
         background-color: transparent;
         border: 3px solid rgb(27, 113, 102); 
-        font-size: 30px;
+        font-size: 2.7vw;
         text-transform: uppercase;
         letter-spacing: .1rem;
         margin-top: 30px;  
@@ -192,7 +192,7 @@ h3,
 p {
     text-align: -webkit-center;
     color:white;
-    padding: 6px;
+    padding: 3px;
     /* background-color: black; */
     margin: auto;
     /* max-width: fit-content; */
@@ -631,7 +631,7 @@ section .footer {
    }
       
       div.image-description  {
-        padding: 15px;
+        padding: 10px;
         text-align: center;
         color:#ddd;
         font: small-caption;
@@ -645,7 +645,7 @@ section .footer {
       }
       
       .responsive {
-        padding: .5rem;
+        padding: 1rem;
         margin:auto;
         float: right;
         width: 25%;
@@ -694,7 +694,7 @@ section .footer {
         overflow: hidden;
         border-right: 3px solid;
         font-family: oswald;
-        font-size: 4.5em;
+        font-size: 5.7vw;
       }
       
       @keyframes typing {
@@ -732,14 +732,14 @@ section .footer {
         width: 100%;
      }
      #about-me .col-right h3 {
-        font-size: 5em;
+        font-size: 5.9vw;
         font-weight: 500;
         letter-spacing: .2rem;   
         margin-bottom: 10px;
         color: #9922af;
      }
      #about-me .col-right h4 {
-        font-size: 35px;
+        font-size: 2.7vw;
         font-weight: 500;
         letter-spacing: .2rem;   
         margin-bottom: 10px;
@@ -751,7 +751,7 @@ section .footer {
         display: -webkit-inline-box;
         color: white;
         line-height: normal;
-        font-size: 1.3rem;
+        font-size: 1.5vw;
         word-spacing: 1.5px;
      }
      /* #about-me .col-right .cta {
@@ -816,7 +816,7 @@ section .footer {
    color: white;
    background-color: transparent;
    border: 2px solid rgb(27, 113, 102);
-   font-size: 1rem;
+   font-size: 1.2vw;
    text-transform: uppercase;
    letter-spacing: .1rem;
    margin: 2.0rem;
