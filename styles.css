@@ -10,6 +10,7 @@ html{
     font: size 10px;
     font-family:'Oswald', sans-serif;
 }
+
 a{
     text-decoration: none;
 }
@@ -20,8 +21,7 @@ a{
     align-items: center;
     justify-content: center; 
 }
-
-       
+      
 .navbar {
     overflow: hidden;
     background-color: transparent;
@@ -79,10 +79,9 @@ p {
          max-width: 1200px;
          margin: 0 auto;
          padding: 0 50px;
-         justify-content: flex-end;  /*use to move Hello message to the right */
-         
-  
+         justify-content: flex-end;  /*use to move Hello message to the right */        
      }
+
     #hero h1{
         display: block;
         width: fit-content;
@@ -93,8 +92,8 @@ p {
         animation: text_reveal .7s ease forwards;
         animation-delay: 1ss;
         background-color: transparent;
- 
     }
+
     #hero h1:nth-child(1){
         animation-delay: 1s;
     }
@@ -103,8 +102,7 @@ p {
     }
     #hero h1:nth-child(3){
         animation: text_reveal_name .5s ease forwards;
-        animation-delay: 4s;
-         
+        animation-delay: 4s;     
     }
     #hero h1 span{
         position: absolute;
@@ -123,8 +121,7 @@ p {
         animation-delay: 2s;
     }
     #hero h1:nth-child(3) span{
-        animation-delay: 3.5s;
-        
+        animation-delay: 3.5s;   
     }
 
     #hero .cta {
@@ -139,9 +136,9 @@ p {
         margin-top: 30px;  
         margin-left: 50px;
         transition: .5s ease background-color;
-        transition-property: background-color, color;
-       
+        transition-property: background-color, color;      
     }
+
     #hero .cta:hover{
         background: purple;
         color: white;
@@ -149,7 +146,6 @@ p {
     }
 
 /*End Hero Section */
-
 
 .responsive {
     max-width: 100%;
@@ -161,8 +157,6 @@ p {
       margin: 6px 0;
     }
 } */
-
-
 h1,
 h2,
 h3,
@@ -173,21 +167,16 @@ p {
     /* background-color: black; */
     margin: auto;
     /* max-width: fit-content; */
-
 }
     
-
 #para1 {
     text-align: center;
     color: whitesmoke;  
 }
 
-
 /* Projects Section */
 
 /* End Projects Section */
-
-
 
 /*Keyframes */
 @keyframes text_reveal_box{
@@ -252,7 +241,7 @@ section .footer {
 	width: 40%;
 }
 
-/* The company logo */
+/* The personal logo */
 
 .footer-distributed h3{
 	color:  #ffffff;
@@ -379,19 +368,17 @@ section .footer {
 	height: 35px;
 	cursor: pointer;
 	background-color:  #06090b;
-	border-radius: 2px;
-    
+	border-radius: 2px; 
 	font-size: 25px;
 	color: #ffffff;
 	text-align-last: right;
 	line-height: 35px;
-
-	/* margin-right: 8px; */
 	margin-bottom: 8px;
+  	/* margin-right: 8px; */
     /* margin-left: 28px; */
 }
 
-/* to make the footer be responsive to media, keep these media queries */
+/* to make the footer be responsive to the media, keep these media queries */
 
 @media (max-width: 880px) {
 
@@ -414,7 +401,6 @@ section .footer {
 
 }
        /*end of copy code for footer*/
-
 
        /*start of copy of projects */
       
@@ -449,8 +435,7 @@ section .footer {
         color:#ddd;
         font: small-caption;
         letter-spacing: .02em;
-        white-space: break-spaces;
-        
+        white-space: break-spaces;    
       }
       
       * {
@@ -479,15 +464,13 @@ section .footer {
 
       .clearfix {
           background: #06090b;
-          padding-bottom: 4em;
-        
+          padding-bottom: 4em;  
       }
       
       .clearfix:after {
         content: "";
         display: table;
-        clear: both;
-       
+        clear: both; 
       }
 
       .projects-wrapper {
@@ -542,9 +525,7 @@ section .footer {
      }
      #about-me .col-right{
         width: 100%;
-       
         max-height: 50%;       
-
      }
      #about-me .col-right h3 {
         font-size: 5.9vw;
@@ -580,15 +561,16 @@ section .footer {
         z-index: 1;
         flex-shrink: 0;   
      }
+
      #about-me .col-left .about-me-img::after {
         content:'';
         position: absolute;
         left: -45px;
         top:34px;
         height: 100%;
-        width: 98%;
-    
+        width: 98%; 
      }
+     
      #about-me .col-left .about-me-img::after{
         border: 7px double #4022af;
         z-index: -1; 
@@ -630,12 +612,12 @@ section .footer {
 
   #about-me .about-me-resume-button:hover{
     color: white;
-    background-color: purple;   
-}
+    background-color: purple;
+  }   
+
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .col-left, .col-right {
     width: 100%;
-  }
-  
+  } 
 }
